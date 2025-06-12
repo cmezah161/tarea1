@@ -1,0 +1,9 @@
+El programa recibe infomacion del cliente (nombre y cédula)
+
+luego le presenta un menu con opcion de comprar, resumen de compra o salir
+
+luego le presenta 2 opciones de ticket regular o VIP
+
+y valora la cantidad de tickets ingresados para que no se exceda el limite
+
+al final presenta los totales de compra desglosados.
