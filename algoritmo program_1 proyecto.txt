@@ -1,0 +1,64 @@
+-lea numero de veces que corre(int)
+-lea numero a analizar(int)
+-primo o no (divisibles x 1)
+-salida primos o no
+-salida num mayor ingresado y posición
+-cant num primos
+-sumatoria num primos
+-prom num primos
+-cant num no primos
+-sumatoria num no primos
+-prom num no primos
+
+#include <stdio.h>
+int vVeces=0;
+int cVeces=0;
+int vNum=0;
+int vPos=1;
+int vPosM=0;
+int vPri=0;
+int vNpri=0;
+int vPromP=0;
+int vPromNp=0;
+int vMayor=0;
+int vCantP=0;
+int vCantNp=0;
+int vSumP=0;
+int vSumNp=0;
+
+
+int main() {
+	printf(" Digite la cantidad de veces que desea ingresar numeros ");
+	scanf("%i",&vVeces);
+	while(vVeces<=cVeces){
+		printf(" Digite el numero ");
+	    scanf("%i",&vNum);
+	    if ((vNum%2=0)||(vNum%vNum=0)) {printf(" El numero : ");
+	    	printf("%f",vNum);
+	    	printf( " No es primo");
+	    	vCantNp=vCantNp+1;
+	    	vSumNp=vSumNp+vNum;
+	     	vPromNp=vSumNp/vCantNp;
+	    }else{                         //No Primos
+	     	                           //primos
+	    	printf(" El numero : ");
+	    	printf("%f",vNum);
+	    	printf( Es primo);
+	    	vCantP=vCantP+1;
+	    	vSumP=vSumP+vNum;
+	    	vPromP=vSumP/vCantP;
+
+
+	    }
+        if(vNum>vMayor){
+        	vMayor=vNum;
+			vPosM=vPos;       
+		}else{
+        }
+		cVeces=cVeces+vVeces;
+		vPos=vPos+1;
+	}
+	
+	
+	return 0;
+}
